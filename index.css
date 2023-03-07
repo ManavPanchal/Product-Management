@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color:rgb(114, 114, 243);
+    color: white;
+}
+
+/* ------------------------- nav-bar ------------------------ */
+.nav_bar{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(32, 32, 46);
+}
+.nav_bar a{
+    text-decoration: none;
+    color: rgb(151, 151, 241);
+    font-size: 20px;
+}
+.nav_bar a:hover{
+    color: white;
+}
+    /* --------- sortBy ---------- */
+.sortby:hover .sort_list{
+    display: block;
+}
+.sort_list{
+    display: none;
+    position: absolute;
+    background-color: rgb(151, 151, 241);
+}
+.sort_list li{
+    list-style-type: none;
+    padding: 5px;
+}
+.sort_list li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(114, 114, 243);
+}
